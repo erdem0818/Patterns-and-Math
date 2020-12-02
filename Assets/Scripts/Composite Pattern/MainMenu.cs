@@ -7,16 +7,12 @@ public class MainMenu : MonoBehaviour, IMenuComponent
     private string _name; 
     private List<IMenuComponent> _menus;
 
-    public MainMenu(string name)
+    public Awake()
     {
-        this._name = name;
+        this._name = gameObject.name;
         _menus =new List<IMenuComponent>();
     }
-    private void Start() 
-    {
-        _name = "Main Menu";
-    }
-
+    
     public void Add(IMenuComponent menu)
     {
         _menus.Add(menu);
