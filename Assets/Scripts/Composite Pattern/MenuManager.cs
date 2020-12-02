@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
-    MainMenu mainMenu = new MainMenu("MainMenu");
-    MainMenu settings = new MainMenu("Settings");
+    MainMenu mainMenu = new MainMenu();
+    MainMenu settings = new MainMenu();
 
     SubMenu credits = new SubMenu("Credits");
 
