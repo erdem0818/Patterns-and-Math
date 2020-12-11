@@ -3,16 +3,29 @@ using UnityEngine;
 
 class PlayerHandle
 {
-    public static void SendRequest(AbstractHandler abstractHandler)
+    //Player must only send request , it should not be responsible for returning "don't have". need to fix
+    public static void SendRequest(AbstractHandler<HandleData> abstractHandler)
     {
-        foreach(var obj in new List<string> {"Horse", "Sword","Mana Potion"})
+        foreach(HandleData obj in new List<HandleData> { new HandleData("Horse"),new HandleData("Sword"),new HandleData("Mana Potion") })
         {
-            Debug.Log($"Player: I want to {obj} !");
-            
+            Debug.Log($"Player: I want to a {obj.requestObject} !");
+
             var result = abstractHandler.Handle(obj);
 
-            if(result != null) Debug.Log($"    {result}");
-            else Debug.Log($"I do not have {obj} to give you");
+            if (result != null)
+                Debug.Log($"  {result}");
+            else
+                Debug.Log($"I do not have {obj.requestObject} to give you");
         }
+
+        //foreach(var obj in new List<string> {"Horse", "Sword", "Mana Potion"})
+        //{
+        //    Debug.Log($"Player: I want to {obj} !");
+
+        //    var result = abstractHandler.Handle(new HandleData(obj));
+
+        //    if (result != null) Debug.Log($"    {result}");
+        //    else Debug.Log($"I do not have {obj} to give you");
+        //}
     }
 }

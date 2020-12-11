@@ -1,16 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class HandlerExecutor : MonoBehaviour
 {
     private void Start()
     {
-        var HostlerHandler = new HostlerHandler();
-        var SwordMasterHandler = new SwordMasterHandler();
-        var HealerHandler = new HealerHandler();
+        var HostlerHandler = new HostlerHandler<HandleData>();
+        var SwordMasterHandler = new SwordMasterHandler<HandleData>();
+        var HealerHandler = new HealerHandler<HandleData>();
 
-        HostlerHandler.SetNext(SwordMasterHandler).SetNext(HealerHandler);
+        HostlerHandler.SetNext(HealerHandler).SetNext(SwordMasterHandler);      
 
         PlayerHandle.SendRequest(HostlerHandler);
     }

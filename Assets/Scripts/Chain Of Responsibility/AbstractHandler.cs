@@ -1,20 +1,23 @@
-﻿public class AbstractHandler : IHandler
+﻿public abstract class AbstractHandler<T> : IHandler<T> where T : HandleData
 {
-    private IHandler _nextHandler;
+    private IHandler<T> _nextHandler;
 
 
-    public IHandler SetNext(IHandler handler)
+    public IHandler<T> SetNext(IHandler<T> handler)
     {
         this._nextHandler = handler;
-
         //Class.SetNext(class).SetNext(class); IHandler func.
         return handler;
     }
-
-    public virtual object Handle(object request)
+    public virtual string Handle(T request)
     {
         if(this._nextHandler != null) return this._nextHandler.Handle(request);
         else return null;
     }
 
+    //public virtual object Handle(object request)
+    //{
+    //    if (this._nextHandler != null) return this._nextHandler.Handle(request);
+    //    else return null;
+    //}
 }

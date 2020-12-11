@@ -1,6 +1,6 @@
-﻿public interface IHandler
+﻿public interface IHandler<T> where T : HandleData
 {
-    IHandler SetNext(IHandler handler);
-    object Handle(object request);
+    IHandler<T> SetNext(IHandler<T> handler);
+    string Handle(T request);
 }
 
