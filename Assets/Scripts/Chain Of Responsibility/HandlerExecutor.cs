@@ -8,7 +8,7 @@ public class HandlerExecutor : MonoBehaviour
         var SwordMasterHandler = new SwordMasterHandler<HandleData>();
         var HealerHandler = new HealerHandler<HandleData>();
 
-        HostlerHandler.SetNext(HealerHandler).SetNext(SwordMasterHandler);      
+        HostlerHandler.SetNext(HealerHandler).SetNext(SwordMasterHandler);  
 
         PlayerHandle.SendRequest(HostlerHandler);
     }
