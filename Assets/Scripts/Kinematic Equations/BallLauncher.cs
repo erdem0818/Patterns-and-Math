@@ -14,7 +14,7 @@ public class BallLauncher : MonoBehaviour
 
     private void Start()
     {
-        ball.useGravity = false;
+        ball.useGravity = false;  
     }
     private void Update()
     {
@@ -22,7 +22,7 @@ public class BallLauncher : MonoBehaviour
         {
             Launch();
         }
-
+        
         if (debugPath)
             DrawPath();
     }
