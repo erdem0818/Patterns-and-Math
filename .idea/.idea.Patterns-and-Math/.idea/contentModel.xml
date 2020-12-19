@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\ganov\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\ganov\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Patterns-and-Math.19564386.00" t="ExcludeRecursive" />
+    <e p="C:\Users\ganov\OneDrive\Belgeler\Patterns-and-Math" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Adapter Pattern" t="Include">
+            <e p="AdapterClient.cs" t="Include" />
+            <e p="IOnlinePlayerData.cs" t="Include" />
+            <e p="OnlinePlayer.cs" t="Include" />
+            <e p="OnlinePlayerAdapter.cs" t="Include" />
+          </e>
+          <e p="Chain Of Responsibility" t="Include">
+            <e p="AbstractHandler.cs" t="Include" />
+            <e p="HandleData.cs" t="Include" />
+            <e p="HandlerExecutor.cs" t="Include" />
+            <e p="HealerHandler.cs" t="Include" />
+            <e p="HostlerHandler.cs" t="Include" />
+            <e p="IHandler.cs" t="Include" />
+            <e p="PlayerHandle.cs" t="Include" />
+            <e p="SwordMasterHandler.cs" t="Include" />
+          </e>
+          <e p="Command Pattern" t="Include">
+            <e p="Command.cs" t="Include" />
+            <e p="DoNothingCommand.cs" t="Include" />
+            <e p="GameController.cs" t="Include" />
+            <e p="MoveBackCommand.cs" t="Include" />
+            <e p="MoveForwardCommand.cs" t="Include" />
+            <e p="MoveLeftCommand.cs" t="Include" />
+            <e p="MoveObject.cs" t="Include" />
+            <e p="MoveRightCommand.cs" t="Include" />
+          </e>
+          <e p="Composite Pattern" t="Include">
+            <e p="IMenuComponent.cs" t="Include" />
+            <e p="MainMenu.cs" t="Include" />
+            <e p="MenuManager.cs" t="Include" />
+            <e p="SubMenu.cs" t="Include" />
+          </e>
+          <e p="Decorator Pattern" t="Include">
+            <e p="DecoratorPlayer.cs" t="Include" />
+            <e p="FireDecorator.cs" t="Include" />
+            <e p="ISword.cs" t="Include" />
+            <e p="StunDecorator.cs" t="Include" />
+            <e p="Sword.cs" t="Include" />
+            <e p="SwordDecorator.cs" t="Include" />
+          </e>
+          <e p="Facade Pattern" t="Include">
+            <e p="FacadeClient.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="PlayerData.cs" t="Include" />
+            <e p="SaveManager.cs" t="Include" />
+          </e>
+          <e p="Factory Pattern" t="Include">
+            <e p="Client.cs" t="Include" />
+            <e p="Huawei.cs" t="Include" />
+            <e p="IPhone.cs" t="Include" />
+            <e p="PhoneFactory.cs" t="Include" />
+            <e p="PhoneStore.cs" t="Include" />
+            <e p="PhoneType.cs" t="Include" />
+            <e p="Samsung.cs" t="Include" />
+          </e>
+          <e p="Flyweight Pattern" t="Include">
+            <e p="BlackBox.cs" t="Include" />
+            <e p="BlueBox.cs" t="Include" />
+            <e p="Box.cs" t="Include" />
+            <e p="BoxColor.cs" t="Include" />
+            <e p="BoxFactory.cs" t="Include" />
+            <e p="ExecutorFly.cs" t="Include" />
+          </e>
+          <e p="Kinematic Equations" t="Include">
+            <e p="BallLauncher.cs" t="Include" />
+            <e p="MotorOfObjects.cs" t="Include" />
+            <e p="TimerOfObjects.cs" t="Include" />
+          </e>
+          <e p="Mediator Pattern" t="Include">
+            <e p="BaseComponent.cs" t="Include" />
+            <e p="Component1.cs" t="Include" />
+            <e p="Component2.cs" t="Include" />
+            <e p="ConcreteMediator.cs" t="Include" />
+            <e p="IMediator.cs" t="Include" />
+            <e p="MediatorExecutor.cs" t="Include" />
+          </e>
+          <e p="MeshGeneration" t="Include">
+            <e p="MeshGenerator.cs" t="Include" />
+            <e p="MeshGeneratorComplex.cs" t="Include" />
+          </e>
+          <e p="Proxy Pattern" t="Include">
+            <e p="Buyer.cs" t="Include" />
+            <e p="IOrder.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
+            <e p="Shop.cs" t="Include" />
+          </e>
+          <e p="Singleton Pattern" t="Include">
+            <e p="SingletonSampleClass.cs" t="Include" />
+          </e>
+          <e p="State Pattern" t="Include">
+            <e p="Car.cs" t="Include" />
+            <e p="Engine.cs" t="Include" />
+            <e p="EngineState.cs" t="Include" />
+            <e p="OkState.cs" t="Include" />
+            <e p="OverloadState.cs" t="Include" />
+          </e>
+          <e p="Template Method Pattern" t="Include">
+            <e p="NPC.cs" t="Include" />
+            <e p="NPCHammerSmith.cs" t="Include" />
+            <e p="NPCShop.cs" t="Include" />
+            <e p="TemplatePlayer.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Patterns-and-Math.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
